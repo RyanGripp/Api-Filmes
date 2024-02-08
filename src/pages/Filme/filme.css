@@ -1,0 +1,189 @@
+.filme-details .background-image {
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    z-index: -1;
+    opacity: 60%;
+}
+
+.filme-details .apresentacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(600px - 55px); /*background - header*/
+    color: white;
+    font-size: 1.6em;
+}
+
+.filme-details .apresentacao h1{
+    text-shadow: 0 5px 10px rgba(0, 0, 0), 0 5px 15px rgba(0, 0, 0), 0 5px 20px rgba(0, 0, 0);
+}
+
+.filme-details .main{
+    display: flex;
+    max-width: 90%;
+    margin: 0 auto 40px;
+    padding: 20px;
+    background-color: rgb(37, 37, 37);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.filme-details img {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin-right: 70px;
+}
+
+.filme-details .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.filme-details .info-label {
+    color: #969696;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+.filme-details .avaliacao {
+    color: #ff9900;
+    font-weight: bold;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: normal;
+}
+
+.filme-details .genero {
+    text-align: center;
+}
+
+.filme-details .generos span {
+    display: inline-block;
+    /* background-color: #ddd; */
+    border: #ddd 1px solid;
+    color: #ddd;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 20px;
+}
+
+.filme-details .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.filme-details .buttons .salvar,
+.filme-details .buttons .salvo {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 4px;
+    color: #fff;
+    flex-direction: row;
+    align-items: center;
+}
+
+.filme-details .buttons .salvar{
+    background-color: rgb(43, 53, 244);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.filme-details .buttons .salvar:hover {
+    background-color: rgb(36, 43, 174);
+}
+
+.filme-details button span::before,
+.filme-details button span::after {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.filme-details .salvar span::before {
+    width: 2.5px;
+    height: 24px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.filme-details .salvar span::after {
+    width: 24px;
+    height: 2.5px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.filme-details .buttons .salvar span {
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+    margin-right: 5px;
+}
+
+.filme-details .buttons .salvar:hover span::before {
+    transform: translateX(-50%) rotate(90deg);
+}
+  
+.filme-details .buttons .salvar:hover span::after {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.filme-details .buttons .salvo {
+    background-color: #00c600;
+}
+
+.filme-details .buttons .salvo span {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.filme-details .salvo span::before {
+    width: 2.5px;
+    height: 26px;
+    left: 50%;
+    top: 0;
+    transform:  rotate(45deg);
+}
+
+.filme-details .salvo span::after {
+    width: 2.5px;
+    height: 12px;
+    left: 8%;
+    top: 0;
+    transform: translateY(100%) rotate(-45deg);
+}
+
+.filme-details .buttons a {
+    background-color: #fff;
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 11px;
+    transition: background 0.3s ease;
+}
+
+.filme-details .buttons a:hover {
+    background-color: #8a8a8a;
+}
+  
