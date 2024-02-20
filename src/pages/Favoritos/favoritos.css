@@ -12,8 +12,7 @@
 
 .favoritos ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
     width: 46%;
     margin: 20px;
 }
@@ -89,7 +88,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
     display: flex;
@@ -162,4 +161,45 @@
 
 .modal-overlay .modal .opcoes .nao:hover {
     background-color: rgb(36, 43, 174);
+}
+
+@media (max-width: 480px) {
+    .favoritos ul {
+        width: 90%;
+        max-width: none;
+        margin: 20px 0;
+    }
+
+    .favoritos li {
+        flex-direction: column;
+        margin: 15px 0;
+    }
+
+    .favoritos li img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        margin-bottom: 20px;
+    }
+
+    .favoritos li .conteudo > *{
+        margin-bottom: 20px;
+    }
+
+    .modal-overlay {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .modal-overlay .modal {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .modal-overlay .modal img {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .modal-overlay .modal .conteudo > * {
+        margin-bottom: 20px;
+    }
 }

@@ -21,6 +21,7 @@
 
 .filme-details .apresentacao h1{
     text-shadow: 0 5px 10px rgba(0, 0, 0), 0 5px 15px rgba(0, 0, 0), 0 5px 20px rgba(0, 0, 0);
+    text-align: center;
 }
 
 .filme-details .main{
@@ -68,11 +69,10 @@
 
 .filme-details .generos span {
     display: inline-block;
-    /* background-color: #ddd; */
     border: #ddd 1px solid;
     color: #ddd;
     padding: 5px 10px;
-    margin: 0 5px;
+    margin: 5px;
     border-radius: 20px;
 }
 
@@ -185,5 +185,38 @@
 
 .filme-details .buttons a:hover {
     background-color: #8a8a8a;
+}
+
+@media (max-width: 480px) {
+    .filme-details .background-image {
+        background: center;
+        background-size: cover;
+        margin-top: 55px;
+        width: 100%;
+        height: 300px;
+    }
+    .filme-details .apresentacao{
+        height: calc(300px - 55px);
+    }
+
+    .filme-details .main{
+        max-width: 85%;
+    }
+
+    .filme-details .main .description > * {
+        margin-bottom: 40px;
+    }
+
+    .filme-details img {
+        display: none;
+    }
+
+    .filme-details .buttons {
+        flex-direction: column;
+    }
+
+    .filme-details .buttons .salvar, .filme-details .buttons .salvo{
+        margin-bottom: 25px;
+    }
 }
   
